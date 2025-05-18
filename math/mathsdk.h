@@ -30,3 +30,7 @@ typedef vec_t vec6_t[6];
 
 void snapvec(vec3_t V);
 
+template VectorElement<typedef float>;
+template Vector3Element<typedef float>;
+template Vector4Element<typedef float>;
+template Vector6Element<typedef float>;
