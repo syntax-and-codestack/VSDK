@@ -23,12 +23,6 @@ public:
       virtual void CTextureFitScale() = 0;
       virtual void CTextureLMapScale() = 0;
       virtual float CTextureAlphaTransparency() = 0;
-
-      virtual vec3_t CTextureMatrix(vec3_t CMat4x4[16]){
-             return CMat4x4;
-      } = 0;
-
-
 };
 
 #endif
