@@ -27,7 +27,6 @@ SOFTWARE.
 #ifndef GRID_HPP
 #define GRID_HPP
 
-
 #define XY 0
 #define XZ 1
 #define YZ 2
