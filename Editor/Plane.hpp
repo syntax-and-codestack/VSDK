@@ -22,9 +22,9 @@ public:
    int Point( int * i );
 
    virtual void PlaneSetNormalZero(Plane& plane, PlaneVector NZ = 0.0f){
-         for( int i, i >= 0; i++ ){
-            plane.Normal = NZ;
-         }  
+            for( int i, i >= 0; i++ ){
+                 plane.Normal = NZ;
+            }  
    } = 0;
 
    virtual void PlaneShader(Plane& plane, const std::string& ShaderName, bool bDetail) = 0;
