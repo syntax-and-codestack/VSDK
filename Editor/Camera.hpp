@@ -51,9 +51,9 @@ public:
 
    enum CCameraMode
    {
-     c_camera_wireframe = 0x0,
-     c_camera_fill = 0x1,
-     c_camera_fake = 0x3
+     CCameraWireframe = 0x0,
+     CCameraFill = 0x1,
+     CCameraFake = 0x3
    };
 
 
