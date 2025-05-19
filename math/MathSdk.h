@@ -1,4 +1,4 @@
-//mathsdk.h
+//MathSdk.h
 /*
 MIT License
 
