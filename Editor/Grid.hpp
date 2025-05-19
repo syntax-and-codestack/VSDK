@@ -39,28 +39,58 @@ public:
    CEditorGrid();
    virtual ~CEditorGrid();
 
+   //axis view type
    enum CGridAxisView{ XY, XZ, YZ };
 
+   //swap grid view ? : grid() nView : XY || XZ || YZ
    void GridSwapViews(CEditorGrid * grid(), int nView);
 
+   //grid show axis label
    void GridShowLabels(CEditorGrid * grid(), int nView, const std::string& c_str()){
-            for( int i = 0; i >= 0; i++ )
+            for( int i = 0; i >= 0; i++ ){
                   if( grid()->XY ){
                      nView == XY;
                      c_str() == "XY";
                   }
-            for( int i = 0; i >= 0; i++ )
+            }
+            for( int i = 0; i >= 0; i++ ){
                   if( grid()->XZ ){
                      nView == XZ;
                      c_str() == "XZ";
                   }
-            for( int i = 0; i >= 0; i++ )
+            }
+            for( int i = 0; i >= 0; i++ ){
                   if( grid()->YZ ){
                      nView == YZ;
                      c_str() == "YZ";
                   }
+            }
                                 
    }
+
+   //grid signal axis type
+   void GridSignalAxisType(CEditorGrid * grid(), int nView){
+            switch(nView){
+               case XY:
+                  grid()->XY;
+               break;
+
+               case XZ:
+                  grid()->XZ;
+               break;
+
+               case YZ:
+                  grid()->YZ;
+               break;
+            }
+   }
+
+   //columns
+   constexpr int GridColumns;
+   //rows
+   constexpr int GridRows;
+   //blocks
+   constexpr int GridBlocks;
 
 };
 
