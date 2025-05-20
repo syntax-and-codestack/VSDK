@@ -37,7 +37,7 @@ namespace PlaneSDKModule
 
 class Plane{
 public:
-   Plane();
+   Plane(vec3_t _normals, vec3_t _dist) : Dist(_dist), Normal(_normals){};
    virtual ~Plane();
 
    PlaneVector Dist;
